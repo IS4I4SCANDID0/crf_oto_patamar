@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "dist/api/routes/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/create-ip", "dest": "dist/api/routes/createIpAddress.js" },
+    { "src": "/api/read-ip", "dest": "dist/api/routes/readIpAddress.js" }
+  ]
+}
