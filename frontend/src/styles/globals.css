@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+	--background: #f5f0e6;
+	--foreground: #1a1a1a;
+	--crf-red: #d10000;
+	--crf-gray: #4a4a4a;
+}
+
+.dark {
+	--background: #1a1a1a;
+	--foreground: #f5f0e6;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #f5f0e6;
+		--crf-red: #d10000;
+		--crf-gray: #4a4a4a;
+	}
+} */
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: <> */
+@theme {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-red-crf: var(--crf-red);
+	--color-gray-crf: var(--crf-gray);
+	--font-pixel: "Press Start 2P", cursive;
+	--font-luckiest: "Luckiest_Guy", serif;
+	--font-antonio: "Antonio", sans-serif;
+}
